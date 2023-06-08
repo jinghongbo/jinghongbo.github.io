@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>程序员小波</title>
+  
+  
+  <link href="https://jinghongbo.com/atom.xml" rel="self"/>
+  
+  <link href="https://jinghongbo.com/"/>
+  <updated>2023-06-08T08:32:59.637Z</updated>
+  <id>https://jinghongbo.com/</id>
+  
+  <author>
+    <name>敬洪波</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://jinghongbo.com/2023/06/08/hello-world/"/>
+    <id>https://jinghongbo.com/2023/06/08/hello-world/</id>
+    <published>2023-06-08T08:32:59.637Z</published>
+    <updated>2023-06-08T08:32:59.637Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>使用Hexo搭建个人博客并通过GitHub Pages和Cloudflare加速</title>
+    <link href="https://jinghongbo.com/2023/06/08/building-blog/"/>
+    <id>https://jinghongbo.com/2023/06/08/building-blog/</id>
+    <published>2023-06-08T08:17:11.000Z</published>
+    <updated>2023-06-08T08:32:59.637Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在本文中，我们将介绍如何使用Hexo框架搭建个人博客，并利用GitHub Pages进行静态页面托管，同时结合Cloudflare提供的CDN加速服务，提升博客的访问速度和稳定性。</p><h2 id="步骤1：安装Node-js和Git"><a href="#步骤1：安装Node-js和Git" class="headerlink" title="步骤1：安装Node.js和Git"></a>步骤1：安装Node.js和Git</h2><p>首先，确保你的计算机上安装了最新版本的Node.js和Git。你可以从官方网站下载并按照相应的安装指南进行安装。</p><h2 id="步骤2：安装Hexo"><a href="#步骤2：安装Hexo" class="headerlink" title="步骤2：安装Hexo"></a>步骤2：安装Hexo</h2><p>在命令行中执行以下命令安装Hexo：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure><h2 id="步骤3：初始化Hexo"><a href="#步骤3：初始化Hexo" class="headerlink" title="步骤3：初始化Hexo"></a>步骤3：初始化Hexo</h2><p>选择一个适合你的文件夹作为博客项目的根目录，在命令行中进入该目录并执行以下命令：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myblog</span><br><span class="line">cd myblog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure><p>以上命令将创建一个名为myblog的文件夹，并在其中初始化Hexo项目。</p><h2 id="步骤4：配置Hexo"><a href="#步骤4：配置Hexo" class="headerlink" title="步骤4：配置Hexo"></a>步骤4：配置Hexo</h2><p>打开myblog文件夹中的<code>_config.yml</code>文件，根据你的需要进行以下配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">My</span> <span class="string">Blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">Welcome</span> <span class="string">to</span> <span class="string">my</span> <span class="string">blog!</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">A</span> <span class="string">simple</span> <span class="string">and</span> <span class="string">elegant</span> <span class="string">blog</span> <span class="string">powered</span> <span class="string">by</span> <span class="string">Hexo.</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">Your</span> <span class="string">Name</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">en</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="comment"># Your timezone</span></span><br></pre></td></tr></table></figure><h2 id="步骤5：创建新文章"><a href="#步骤5：创建新文章" class="headerlink" title="步骤5：创建新文章"></a>步骤5：创建新文章</h2><p>在命令行中执行以下命令创建一篇新文章：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;Hello World&quot;</span><br></pre></td></tr></table></figure><p>这将在<code>source/_posts</code>目录下创建一个名为<code>hello-world.md</code>的Markdown文件，其中包含了文章的初始内容。</p><h2 id="步骤6：编辑文章"><a href="#步骤6：编辑文章" class="headerlink" title="步骤6：编辑文章"></a>步骤6：编辑文章</h2><p>使用你喜欢的文本编辑器打开<code>hello-world.md</code>文件，撰写你的博客内容。可以使用Markdown语法进行格式化。</p><h2 id="步骤7：生成静态页面"><a href="#步骤7：生成静态页面" class="headerlink" title="步骤7：生成静态页面"></a>步骤7：生成静态页面</h2><p>在命令行中执行以下命令，生成静态页面：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure><p>执行完毕后，你将在<code>public</code>目录下看到生成的静态页面文件。</p><h2 id="步骤8：配置GitHub-Pages"><a href="#步骤8：配置GitHub-Pages" class="headerlink" title="步骤8：配置GitHub Pages"></a>步骤8：配置GitHub Pages</h2><p>首先，创建一个新的GitHub仓库，仓库名为<code>yourusername.github.io</code>（将<code>yourusername</code>替换为你的GitHub用户名）。确保仓库是公开的。</p><p>在Hexo项目根目录的<code>_config.yml</code>文件中，进行以下配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:yourusername/yourusername.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure><p>将上述命令中的<code>yourusername</code>替换为你的GitHub用户名。</p><h2 id="步骤9：部署到GitHub-Pages"><a href="#步骤9：部署到GitHub-Pages" class="headerlink" title="步骤9：部署到GitHub Pages"></a>步骤9：部署到GitHub Pages</h2><p>在命令行中执行以下命令，将生成的静态页面部署到GitHub Pages：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><h2 id="步骤10：配置Cloudflare-CDN"><a href="#步骤10：配置Cloudflare-CDN" class="headerlink" title="步骤10：配置Cloudflare CDN"></a>步骤10：配置Cloudflare CDN</h2><p>创建一个Cloudflare账户，并添加你的域名到Cloudflare进行管理。在Cloudflare中，设置合适的DNS记录和SSL选项，以确保你的博客可以通过域名进行访问。</p><h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p>恭喜你！现在你已经成功地搭建了个人博客并通过GitHub Pages和Cloudflare加速。你可以使用Hexo框架创建新的文章，然后使用<code>hexo generate</code>生成静态页面，并通过<code>hexo deploy</code>部署到GitHub Pages上。Cloudflare将为你提供CDN加速服务，提升你的博客访问速度和稳定性。</p><p>开始写作吧，与世界分享你的知识和见解吧！</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;在本文中，我们将介绍如何使用Hexo框架搭建个人博客，并利用GitHub Pages进行静态页面托管，同时结合Cloudflare提供的CD</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
