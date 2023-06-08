@@ -83,9 +83,7 @@ deploy:
 hexo deploy
 ```
 
-## 步
-
-骤10：配置Cloudflare CDN
+## 步骤10：配置Cloudflare CDN
 创建一个Cloudflare账户，并添加你的域名到Cloudflare进行管理。在Cloudflare中，设置合适的DNS记录和SSL选项，以确保你的博客可以通过域名进行访问。
 
 ## 结论
