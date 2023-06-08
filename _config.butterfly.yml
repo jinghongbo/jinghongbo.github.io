@@ -27,3 +27,9 @@ social:
   fab fa-github: https://github.com/jinghongbo || Github || "#hdhfbb"
 
 default_top_img: /images/wallpaper/0194_山_海_雪.jpg
+
+
+footer:
+  owner:
+    enable: true
+    since: 2023
